@@ -170,8 +170,8 @@
     },
     
     // Power Menu
-    "custom/exit": {
-        "format": "",
+    "custom/power": {
+        "format": "",
         "on-click": "wlogout",
         "tooltip": false
     },
