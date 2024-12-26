@@ -33,31 +33,34 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 5px 1px 6px 1px;
+    background-color: @rl-border2;
+    margin: 10px 1px 11px 1px;
     padding: 0px 1px;
     border-radius: 15px;
     border: 0px;
     font-weight: bold;
     font-style: normal;
-    font-size: 16px;
+    font-size: 0px;
     color: @textcolor1;
 }
 
 #workspaces button {
+    background-color: @rl-background;
     padding: 0px 5px;
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
     color: @textcolor3;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: @workspacesbackground2;
+    background-color: @rl-border;
+    padding: 0px 5px;
+    margin: 4px 3px;
     border-radius: 15px;
     min-width: 40px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
 }
 
 #workspaces button:hover {

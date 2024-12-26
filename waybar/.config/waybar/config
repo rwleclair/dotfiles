@@ -27,18 +27,14 @@
      "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
+         "sort-by-cordinates": false,
+         "sort-by-number": false,
+         "sort-by-name": false,
          "warp-on-scroll": false,
-         "format": "{name}: {icon}",
-         "format-icons": {
-             "urgent": "",
-             "active": "",
-             "default": ""
-         }
      },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
