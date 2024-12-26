@@ -9,6 +9,7 @@
     "modules-left": [
         "clock",
         "clock#clk2",
+        "mpd",
         "hyprland/workspaces",
     ],
     "modules-center": [
