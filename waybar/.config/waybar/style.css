@@ -236,6 +236,11 @@ window#waybar.empty #window {
     margin: 10px 15px 10px 0px;
 }
 
+#mpd {
+    color: @rl-background;
+    font-size: 20px;
+
+}
 #pulseaudio.muted {
     background-color: @backgrounddark;
     color: @textcolor1;
