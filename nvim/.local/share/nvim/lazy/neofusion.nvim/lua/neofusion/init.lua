@@ -1,4 +1,3 @@
-
 --- @class HighlightDefinition
 --- @field fg string?
 --- @field bg string?
@@ -98,6 +97,10 @@ local function get_colors()
     neutral_blue = palette.neutral_blue,
     neutral_purple = palette.neutral_purple,
     neutral_aqua = palette.neutral_aqua,
+    dark_red = palette.dark_red,
+    dark_green = palette.dark_green,
+    dark_aqua = palette.dark_aqua,
+    gray = palette.gray,
   }
 
   return color_groups

@@ -37,8 +37,4 @@ return {
   dark_aqua = "#06364B",
   light_aqua = "#e8e5b5",
   gray = "#22536f",
-  cold_yellow = "#E69D23",
-  cold_orange = "#BC5A0C",
-  cold_pink = "#f38abe", 
-  cold_olive = "#899E4E"
 }

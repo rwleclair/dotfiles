@@ -323,6 +323,18 @@ local icons_by_filename = {
     cterm_color = "28",
     name = "Vimrc",
   },
+  ["AUTHORS"] = {
+    icon = "",
+    color = "#A172FF",
+    cterm_color = "135",
+    name = "AUTHORS",
+  },
+  ["AUTHORS.txt"] = {
+    icon = "",
+    color = "#A172FF",
+    cterm_color = "135",
+    name = "AUTHORS",
+  },
   ["avif"] = {
     icon = "",
     color = "#a074c4",
@@ -670,6 +682,12 @@ local icons_by_filename = {
     color = "#e8ebee",
     cterm_color = "255",
     name = "i3",
+  },
+  ["index.theme"] = {
+    icon = "",
+    color = "#2DB96F",
+    cterm_color = "35",
+    name = "IndexTheme",
   },
   ["ionic.config.json"] = {
     icon = "",
@@ -1159,6 +1177,12 @@ local icons_by_file_extension = {
     color = "#576d7f",
     cterm_color = "242",
     name = "Asc",
+  },
+  ["asm"] = {
+    icon = "",
+    color = "#0091BD",
+    cterm_color = "31",
+    name = "ASM",
   },
   ["ass"] = {
     icon = "󰨖",
@@ -2690,6 +2714,12 @@ local icons_by_file_extension = {
     cterm_color = "110",
     name = "Nix",
   },
+  ["norg"] = {
+    icon = "",
+    color = "#4878be",
+    cterm_color = "32",
+    name = "Norg",
+  },
   ["nswag"] = {
     icon = "",
     color = "#85ea2d",
@@ -3085,6 +3115,12 @@ local icons_by_file_extension = {
     color = "#FB9D3B",
     cterm_color = "215",
     name = "Rss",
+  },
+  ["s"] = {
+    icon = "",
+    color = "#0071C5",
+    cterm_color = "25",
+    name = "ASM",
   },
   ["sass"] = {
     icon = "",
