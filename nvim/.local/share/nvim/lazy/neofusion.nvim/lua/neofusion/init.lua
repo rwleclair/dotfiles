@@ -101,6 +101,7 @@ local function get_colors()
     dark_green = palette.dark_green,
     dark_aqua = palette.dark_aqua,
     gray = palette.gray,
+    blue_white = palette.blue_white,
   }
 
   return color_groups
@@ -128,6 +129,7 @@ local function get_groups()
       colors.purple,
       colors.aqua,
       colors.fg1,
+      colors.blue_white,
     }
 
     for index, color in ipairs(term_colors) do
@@ -164,19 +166,19 @@ local function get_groups()
     NeofusionOrange = { fg = colors.orange },
     NeofusionOrangeBold = { fg = colors.orange, bold = config.bold },
     NeofusionRedSign = config.transparent_mode and { fg = colors.red, reverse = config.invert_signs }
-        or { fg = colors.red, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.red, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionGreenSign = config.transparent_mode and { fg = colors.green, reverse = config.invert_signs }
-        or { fg = colors.green, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.green, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
-        or { fg = colors.yellow, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.yellow, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionBlueSign = config.transparent_mode and { fg = colors.blue, reverse = config.invert_signs }
-        or { fg = colors.blue, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.blue, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionPurpleSign = config.transparent_mode and { fg = colors.purple, reverse = config.invert_signs }
-        or { fg = colors.purple, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.purple, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionAquaSign = config.transparent_mode and { fg = colors.aqua, reverse = config.invert_signs }
-        or { fg = colors.aqua, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.aqua, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionOrangeSign = config.transparent_mode and { fg = colors.orange, reverse = config.invert_signs }
-        or { fg = colors.orange, bg = colors.bg0, reverse = config.invert_signs },
+      or { fg = colors.orange, bg = colors.bg0, reverse = config.invert_signs },
     NeofusionRedUnderline = { undercurl = config.undercurl, sp = colors.red },
     NeofusionGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
     NeofusionYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
@@ -189,7 +191,7 @@ local function get_groups()
     Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalNC = config.dim_inactive and { fg = colors.fg0, bg = colors.bg1 } or { link = "Normal" },
-    CursorLine = { bg = colors.bg1 },
+    CursorLine = { bg = colors.blue_white },
     CursorColumn = { link = "CursorLine" },
     TabLineFill = { fg = colors.bg4, bg = colors.bg1, reverse = config.invert_tabline },
     TabLineSel = { fg = colors.green, bg = colors.bg1, reverse = config.invert_tabline },
@@ -197,9 +199,9 @@ local function get_groups()
     MatchParen = { bg = colors.bg3, bold = config.bold },
     ColorColumn = { bg = colors.bg1 },
     Conceal = { fg = colors.blue },
-    CursorLineNr = { fg = colors.yellow, bg = colors.bg1 },
-    CursorLineBG = { bg = colors.bg1 },
-    SagaVirtLine = { fg = colors.gray },
+    CursorLineNr = { fg = colors.yellow, bg = colors.blue_white },
+    CursorLineBG = { bg = colors.blue_white },
+    SagaVirtLine = { fg = colors.blue_white },
     NonText = { link = "NeofusionBg2" },
     SpecialKey = { link = "NeofusionFg4" },
     Visual = { bg = colors.bg3, reverse = config.invert_selection },
@@ -222,7 +224,7 @@ local function get_groups()
     ModeMsg = { link = "NeofusionYellowBold" },
     Question = { link = "NeofusionOrangeBold" },
     WarningMsg = { link = "NeofusionRedBold" },
-    LineNr = { fg = colors.bg4 },
+    LineNr = { fg = colors.blue_white },
     SignColumn = config.transparent_mode and { bg = nil } or { bg = colors.bg0 },
     Folded = { fg = colors.gray, bg = colors.bg1, italic = config.italic.folds },
     FoldColumn = config.transparent_mode and { fg = colors.gray, bg = nil } or { fg = colors.gray, bg = colors.bg1 },
