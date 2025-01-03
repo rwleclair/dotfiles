@@ -102,6 +102,11 @@ local function get_colors()
     dark_aqua = palette.dark_aqua,
     gray = palette.gray,
     blue_white = palette.blue_white,
+    pastel_yellow = palette.pastel_yellow,
+    soft_purple = palette.soft_purple,
+    pink = palette.pink,
+    neon_green = palette.neon_green,
+    avacado = palette.avacado,
   }
 
   return color_groups
@@ -130,6 +135,11 @@ local function get_groups()
       colors.aqua,
       colors.fg1,
       colors.blue_white,
+      colors.pastel_yellow,
+      colors.soft_purple,
+      colors.pink,
+      colors.neon_green,
+      colors.avacado,
     }
 
     for index, color in ipairs(term_colors) do
@@ -187,6 +197,13 @@ local function get_groups()
     NeofusionAquaUnderline = { undercurl = config.undercurl, sp = colors.aqua },
     NeofusionOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
 
+    ColdfusionBlueWhite = { fg = colors.blue_white },
+    ColdfusionPastelYellow = { fg = colors.pastel_yellow },
+    ColdfusionSoftPurple = { fg = colors.soft_purple },
+    NeofusionPink = { fg = colors.pink },
+    ColdfusionNeonGreen = { fg = colors.neon_green },
+    Coldfusionavacado = { fg = colors.avacado },
+
     --
     Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
@@ -242,8 +259,8 @@ local function get_groups()
     Repeat = { link = "NeofusionRed" },
     Label = { link = "NeofusionRed" },
     Exception = { link = "NeofusionRed" },
-    Operator = { fg = colors.orange, italic = config.italic.operators },
-    Keyword = { link = "NeofusionRed" },
+    Operator = { fg = colors.blue_white, italic = config.italic.operators },
+    Keyword = { link = "Coldfusionavacado" },
     Identifier = { link = "NeofusionNeutralAqua" },
     Function = { link = "NeofusionGreenBold" },
     PreProc = { link = "NeofusionAqua" },

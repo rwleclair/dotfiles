@@ -38,4 +38,9 @@ return {
   light_aqua = "#e8e5b5",
   gray = "#22536f",
   blue_white = "#D3EFFF",
+  pastel_yellow = "#fedf35",
+  soft_purple = "#9767c4",
+  pink = "#fe35ad",
+  neon_green = "#4EFF33",
+  avacado = "#82ab50",
 }
